@@ -1,0 +1,63 @@
+:root {
+    font-size: 62.5%;
+    --font-raleway: "Raleway", sans-serif;
+
+    --title-lg: bold 4.8rem var(--font-raleway);
+    --title-md: bold 4rem var(--font-raleway);
+    --title-sm: bold 3.2rem var(--font-raleway);
+    --title-xs: bold 1.6rem var(--font-raleway);
+
+    --subtitle: 400 3.2rem/200% var(--font-raleway);
+
+    --body-lg: 400 2rem/140% var(--font-raleway);
+    --body-md: 400 1.6rem/140% var(--font-raleway);
+    --body-sm: 400 1.4rem/140% var(--font-raleway);
+    --body-xs: 400 1.2rem/140% var(--font-raleway);
+
+    --button: bold 1.4rem var(--font-raleway);
+    --link: 400 1.4rem var(--font-raleway);
+    --tag: bold 1rem var(--font-raleway);
+
+    --pink-light: #c59dd2;
+    --pink-base: #9547a5;
+    --pink-dark: #7d298a;
+    --pink-low: #3f0f41;
+
+    --blue-light: #73b6d2;
+    --blue-base: #358bb9;
+    --blue-mid: #2374a4;
+    --blue-dark: #144a72;
+    --blue-low: #08233c;
+
+    --shape-stroke: #002347;
+    --shape-hover: #001933;
+    --shape-base: #000f1f;
+    --shape-background: #00050a;
+
+    --text-title: #f8fbfb;
+    --text-body: #e2e7e9;
+    --text-label: #bac6c9;
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
+
+@media (max-width: 430px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--shape-background);
+}

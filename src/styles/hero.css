@@ -1,0 +1,196 @@
+/* HERO */
+#hero-container {
+    background-image: url("../images/hero-background.png");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+}
+
+/* NAV */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 3.2rem 16rem;
+}
+
+.logo-img {
+    height: 5.8rem;
+    width: 23rem;
+}
+
+.logo-img-sm {
+    display: none;
+}
+
+.nav-button {
+    background-color: var(--pink-dark);
+
+    font: var(--button);
+    color: var(--text-title);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    height: 4rem;
+
+    padding: 0 2rem;
+
+    border-radius: 0.8rem;
+
+    transition: 200ms;
+}
+
+.nav-button:hover {
+    background-color: var(--pink-base);
+}
+
+/* MESSAGE */
+.hero-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 70vh;
+    width: 45%;
+}
+
+.hero-title {
+    font: var(--title-lg);
+    color: var(--text-title);
+    text-align: center;
+
+    margin-bottom: 3.2rem;
+}
+
+.hero-subtitle {
+    font: var(--body-lg);
+    color: var(--text-body);
+    text-align: center;
+
+    width: 90%;
+}
+
+/* PHRASE */
+.phrase-section {
+    text-align: center;
+
+    margin: 8rem;
+}
+
+.spellbook-icon,
+.ouija-icon,
+.crystal-ball-icon {
+    height: 8.8rem;
+    width: 8.8rem;
+}
+
+.phrase {
+    font: var(--subtitle);
+    color: var(--text-body);
+
+    margin: 2rem 0;
+}
+
+.phrase-span {
+    font: var(--subtitle);
+    font-weight: bold;
+    color: var(--blue-light);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLET */
+@media (max-width: 768px) {
+    /* NAV */
+    .nav-container {
+        padding: 2rem 3rem;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 430px) {
+    /* HERO */
+    #hero-container {
+        height: 70vh;
+    }
+
+    /* NAV */
+    .nav-container {
+        padding: 1rem 2rem;
+    }
+
+    .logo-img {
+        display: none;
+    }
+
+    .logo-img-sm {
+        display: block;
+    }
+
+    /* MESSAGE */
+    .hero-message {
+        text-align: center;
+
+        width: 95%;
+
+        margin-top: -10rem;
+    }
+
+    .hero-title {
+        font: var(--title-sm);
+    }
+
+    .hero-subtitle {
+        font: var(--body-md);
+    }
+
+    /* PHRASE */
+    .phrase-section {
+        margin: 5rem;
+    }
+
+    .spellbook-icon,
+    .ouija-icon,
+    .crystal-ball-icon {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .spellbook-icon {
+        margin-right: -20rem;
+    }
+
+    .phrase {
+        font: var(--body-md);
+        color: var(--text-body);
+
+        margin: 1rem 0;
+    }
+
+    .phrase-span {
+        font: var(--body-md);
+        font-weight: 400;
+        color: var(--text-body);
+    }
+
+    .icons {
+        margin: -2rem;
+    }
+}

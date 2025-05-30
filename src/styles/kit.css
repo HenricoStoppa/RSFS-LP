@@ -1,0 +1,127 @@
+/* KIT */
+#kit-container {
+    background-image: radial-gradient(
+        var(--pink-low) 0%,
+        var(--shape-background) 30%
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20rem;
+}
+
+.kit-title-container {
+    font: var(--title-sm);
+    color: var(--text-title);
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.kit-subtitle {
+    font: var(--body-md);
+    text-align: center;
+    color: var(--text-body);
+
+    margin-top: 1rem;
+}
+
+/* KIT ITEMS */
+
+.kit-items-container {
+    display: flex;
+    align-items: center;
+
+    scale: 0.7;
+}
+
+.kit-items-container p {
+    font: var(--body-md);
+    color: var(--text-title);
+}
+
+/* PIN */
+.pin {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    height: 100vh;
+
+    transform: translateX(16rem);
+}
+
+.pin-item-description {
+    transform: translateY(10rem);
+}
+
+.pin-p {
+    margin-bottom: 3rem;
+}
+
+.pin-arrow {
+    scale: 1.2;
+}
+
+.pin-img {
+    transform: rotate(-10deg);
+}
+
+/* BOOK */
+.book {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    z-index: 999;
+}
+
+.book-item-description {
+    transform: translateX(-11rem) translateY(3rem);
+}
+
+.book-p {
+    margin-bottom: 2rem;
+    transform: translateX(-9rem);
+}
+
+.book-arrow {
+    scale: 1.2;
+}
+
+/* bookmark */
+.bookmark {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    height: 100vh;
+
+    margin-right: -16rem;
+}
+
+.yellow-bookmark {
+    transform: rotate(10deg) translateX(-60rem) translateY(-15rem);
+}
+
+.purple-bookmark {
+    transform: rotate(22deg) translateX(6rem) translateY(-5rem);
+}
+
+.bookmark-item-description {
+    transform: translateX(13rem);
+}
+
+.bookmark-p {
+    margin-top: 7rem;
+
+    transform: translateX(-12rem);
+}
+
+.bookmark-arrow {
+    scale: 1.7;
+}
